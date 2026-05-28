@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "competitive-programming"
             }
+          },
+          {
+            "id": "cf31b8ef673da345",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,9 +199,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "292919b28d3e60b8",
+  "active": "cf31b8ef673da345",
   "lastOpenFiles": [
-    "README.md",
-    "competitive-programming.md"
+    "competitive-programming.md",
+    "Untitled.md",
+    "README.md"
   ]
 }
