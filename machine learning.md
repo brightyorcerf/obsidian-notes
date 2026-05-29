@@ -1,5 +1,5 @@
 
-![[Screenshot 2026-05-28 at 8.55.57 PM.png]]
+![[1.png]]
 
 mni-ml is a machine learning library with a TypeScript API and Rust backend. CUDA and WebGPU compatibility. Built to understand how ML frameworks and models work internally.
 
