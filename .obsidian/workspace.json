@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "292919b28d3e60b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "competitive-programming.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "competitive-programming"
-            }
-          },
-          {
-            "id": "cf31b8ef673da345",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "machine learning.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "machine learning"
-            }
-          },
-          {
             "id": "0016208625937f3d",
             "type": "leaf",
             "state": {
@@ -49,8 +21,7 @@
               "title": "competitive-programming"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,7 +184,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "6d575e25023ff901",
+  "active": "0016208625937f3d",
   "lastOpenFiles": [
     "rag.md",
     "machine learning.md",
