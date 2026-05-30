@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "machine learning.md",
+                "file": "competitive-programming.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "machine learning"
+              "title": "competitive-programming"
             }
           }
         ],
@@ -213,10 +213,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "0016208625937f3d",
+  "active": "6d575e25023ff901",
   "lastOpenFiles": [
-    "machine learning math.md",
+    "rag.md",
     "machine learning.md",
+    "machine learning math.md",
     "competitive-programming.md",
     "images/Screenshot 2026-05-28 at 8.55.57 PM.png",
     "images",
