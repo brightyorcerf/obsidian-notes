@@ -1,111 +1,57 @@
 {
   "main": {
-    "id": "6dba42ece1af1ae3",
+    "id": "df9c214bb5fa0a02",
     "type": "split",
     "children": [
       {
-        "id": "2d04655dd80dc719",
+        "id": "23979c7df83d8463",
         "type": "tabs",
         "children": [
           {
-            "id": "0016208625937f3d",
+            "id": "2d1bd229857cd10c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "competitive-programming-solve.md",
-                "mode": "source",
-                "source": false
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "competitive-programming-solve"
-            }
-          },
-          {
-            "id": "1b0491ad5f29d4a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "competitive-programming-learn.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "competitive-programming-learn"
-            }
-          },
-          {
-            "id": "8cfbe42c288bb93d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "open-source.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "open-source"
-            }
-          },
-          {
-            "id": "394c1429b8b10fef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "backend.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "backend"
-            }
-          },
-          {
-            "id": "099c3fa9041894e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "backend.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "backend"
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "5b8655f0198f76a7",
+    "id": "288080a4291dadcc",
     "type": "split",
     "children": [
       {
-        "id": "9d5325cd6de452a6",
+        "id": "de203d87a833b637",
         "type": "tabs",
         "children": [
           {
-            "id": "6d575e25023ff901",
+            "id": "f4d4817aa68a7dd5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "37d8fd16c4acb1a5",
+            "id": "fdeb6d452081f263",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -122,7 +68,7 @@
             }
           },
           {
-            "id": "e97f698aff5168b1",
+            "id": "089f3c301d117317",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -135,23 +81,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 201.5
+    "width": 300
   },
   "right": {
-    "id": "eba10eb9c8b86f6b",
+    "id": "9aa97d7d06c7d9c2",
     "type": "split",
     "children": [
       {
-        "id": "6d410ee2ebb0401e",
+        "id": "fc58ec806f6f32ba",
         "type": "tabs",
         "children": [
           {
-            "id": "253ffbf3095ef29b",
+            "id": "d846d556851d6ed5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitive-programming.md",
+                "file": "Untitled.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,25 +107,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for competitive-programming"
+              "title": "Backlinks for Untitled"
             }
           },
           {
-            "id": "f4ee7446771d5852",
+            "id": "45e97891beb9bd82",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "competitive-programming.md",
+                "file": "Untitled.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from competitive-programming"
+              "title": "Outgoing links from Untitled"
             }
           },
           {
-            "id": "0c125161fb33c695",
+            "id": "e65085cf7920b64a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -194,7 +140,7 @@
             }
           },
           {
-            "id": "be649afd31ae52fd",
+            "id": "b01dfe64a55c7c9f",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -208,18 +154,18 @@
             }
           },
           {
-            "id": "8679d5c648c47ea2",
+            "id": "66b5c41e6a0b3ed6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "competitive-programming.md",
+                "file": "Untitled.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of competitive-programming"
+              "title": "Outline of Untitled"
             }
           }
         ]
@@ -231,7 +177,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -241,21 +186,8 @@
       "bases:Create new base": false
     }
   },
-  "active": "6d575e25023ff901",
+  "active": "2d1bd229857cd10c",
   "lastOpenFiles": [
-    "competitive-programming-learn.md",
-    "designing data-intensive applications.md",
-    "backend.md",
-    "open-source.md",
-    "backend",
-    "competitive-programming-solve.md",
-    "rag.md",
-    "machine-learning-math.md",
-    "machine-learning.md",
-    "images/Screenshot 2026-05-28 at 8.55.57 PM.png",
-    "images",
-    "untitled folder",
-    "Screenshot 2026-05-28 at 8.55.57 PM.png",
-    "README.md"
+    "Untitled.canvas"
   ]
 }
