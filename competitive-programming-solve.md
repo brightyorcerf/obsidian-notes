@@ -6,7 +6,6 @@
 // you never fail until you stop trying
 
 #pragma GCC optimize("O3,unroll-loops")
-#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -108,3 +107,5 @@ int main() {
     while(t--) solve();
 }
 ```
+
+	 

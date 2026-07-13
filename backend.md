@@ -94,6 +94,27 @@ common standard ex) json in textbased serialization and protobuff for binary for
 osi model, javascript client vs rust server
 
 
+--- 
+
+Authentication & Authorization
+
+who are you? what can you do?
+
+multi-factor auth
+- something you know
+- something you are 
+- something you have
+
+in 21st century where you have cloud computing, mobile devices, api based architectures demanded advanced auth frameworks: oauth 2.0, jwt, zero trust architecture, passwordless
+
+future of auth: decentralized / blockchain, post quantum cryptography 
+
+3 key components
+- session: 
+- jwt:
+- cookie:
+
+
 
 --- 
 #### RPCs vs edge functions

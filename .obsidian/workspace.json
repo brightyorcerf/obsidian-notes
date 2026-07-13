@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2d04655dd80dc719",
+        "id": "a6b0747fe565c7ed",
         "type": "tabs",
         "children": [
           {
-            "id": "099c3fa9041894e9",
+            "id": "c5fc1153026b3df6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "competitive-programming.md",
+                "file": "backend.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for competitive-programming"
+              "title": "Backlinks for backend"
             }
           },
           {
@@ -169,8 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,15 +183,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "099c3fa9041894e9",
+  "active": "c5fc1153026b3df6",
   "lastOpenFiles": [
-    "machine-learning.md",
+    "competitive-programming-solve.md",
     "backend.md",
-    "competitive-programming-learn.md",
+    "images/1.png",
     "designing data-intensive applications.md",
+    "machine-learning.md",
+    "competitive-programming-learn.md",
     "open-source.md",
     "backend",
-    "competitive-programming-solve.md",
     "rag.md",
     "machine-learning-math.md",
     "images/Screenshot 2026-05-28 at 8.55.57 PM.png",
