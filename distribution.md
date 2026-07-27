@@ -80,3 +80,20 @@ Most users will not pay, but they can still leave a review.
 #### After You Grow
 Be very deliberate about what you're adding and why. Make data-driven decisions.
 
+#### Studying Paywalls
+
+- hard-paywalls crush freemium
+- value-framing + price anchoring
+- table-based / video / spin-the wheel paywall (maybe)
+- half of the 3-day trial cancellations happen on Day 0
+- clarity over persuasion
+- price your app high: mercedes not nano
+- social proof and build trust
+- superwall / revenueCat 
+- free trial only on yearly plan
+- always be A/B testing both onboarding and paywalls
+- multi-page paywalls, more friction can increase conversions
+- "no commitment, cancel anytime" 
+- right chevron on checkout button
+- no universal most optimal paywall just better experiments
+- we will remind you later trick (more push-notif opt-ins too!)
