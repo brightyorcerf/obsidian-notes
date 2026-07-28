@@ -1,6 +1,5 @@
-
-I have been reading a lot of articles and blogs on this topic recently for my iOS app, here is a compilation of everything I learnt:
-
+Did a deep dive on while building my iOS app. 
+Here's the short version of what I learned:
 #### Obsess Over Distribution:
 
 Think of marketing before building. One viral screen.
