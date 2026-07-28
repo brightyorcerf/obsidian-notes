@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend.md",
+                "file": "deep learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "backend"
-            }
-          },
-          {
-            "id": "a8da212818692d4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "distribution.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "distribution"
+              "title": "deep learning"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "distribution.md",
+                "file": "deep learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for distribution"
+              "title": "Backlinks for deep learning"
             }
           },
           {
@@ -198,19 +183,28 @@
       "bases:Create new base": false
     }
   },
-  "active": "a8da212818692d4a",
+  "active": "6d575e25023ff901",
   "lastOpenFiles": [
+    "images/6.png",
+    "images/5.png",
+    "deep learning.md",
     "distribution.md",
-    "rag.md",
     "backend.md",
+    "images/4.png",
+    "images/3.png",
+    "images/3.png",
     "competitive-programming-solve.md",
-    "images/1.png",
-    "designing data-intensive applications.md",
-    "machine-learning.md",
-    "competitive-programming-learn.md",
-    "open-source.md",
-    "backend",
+    "Pasted image 20260728091117.png",
     "machine-learning-math.md",
+    "images/2.png",
+    "open-source.md",
+    "machine-learning.md",
+    "images/1.png",
+    "images/2.png",
+    "rag.md",
+    "designing data-intensive applications.md",
+    "competitive-programming-learn.md",
+    "backend",
     "images/Screenshot 2026-05-28 at 8.55.57 PM.png",
     "images",
     "untitled folder",
