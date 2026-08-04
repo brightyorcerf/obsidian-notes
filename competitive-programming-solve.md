@@ -108,4 +108,88 @@ int main() {
 }
 ```
 
-	 
+### Dynamic Programming:
+
+Dynamic Programming is mostly just recursion with a few optimizations. 
+- don't do the same thing multiple times
+- discard useless info
+
+Algebraically, `dp[i][j]` is simply a mathematical function $f(i, j)$ that returns a single numerical value (such as a count, minimum cost, or maximum profit) based on state variables $i$ and $j$.
+
+Think of `dp[i][j]` as a **lookup table** for a subproblem:
+* **`i` , `j` (The State):** Inputs defining  the subproblem we solve to build up to the main problem (e.g., $i$ = index of an array, $j$ = capacity). States represent the value(s) that the discarded info compress to. 
+* **`dp[i][j]` (The Value):** Solution/optimal value for that specific subproblem.
+- Transitions: represent the way the states interact with each other
+- Base Case: similar to recursion
+
+Push VS Pull dynamic programming: 
+
+Pull DP: pull answers from prev DP values (our recursive solution)
+Recursive DP can only be Pull DP; for iterative Pull DP the answers we pull need to be complete and the order of iteration always matters
+```
+for each state x:
+	for each state y that can effect x
+	    do some transition with dp[y] to dp[x]
+```
+Push DP: push answers to future DP values (our iterative solution)
+```
+for each state y
+	for each state x that it effects
+		do some transition with dp[y] to dp[x]
+```
+##### Common Algebraic Operations
+
+A. Addition
+* Meaning: The total number of ways to reach the current state is the sum of ways to reach state $A$ plus the sum of ways to reach state $B$.
+* When to use: Counting problems or combining independent choices.
+* Example:
+  ```cpp
+  dp[i][j] = dp[i-1][j] + dp[i][j-1]
+  // Ways to reach cell (i, j) = (ways from top cell) + (ways from left cell)
+  ```
+
+B. Multiplication
+* Meaning: If event $A$ happens in $X$ ways and event $B$ happens in $Y$ ways, both happen in $X \times Y$ ways.
+* When to use: Combinatorics, independent sequential choices, or probability DP.
+* Example:
+  ```cpp
+  dp[u][state] = dp[v1][state] * dp[v2][state]
+  // Tree DP or combining independent combinatorial subtrees
+  ```
+
+C. Min / Max
+* Meaning: Out of multiple valid decisions, select the optimal one.
+* When to use: Optimization problems (maximizing profit, minimizing cost).
+* Example:
+  ```cpp
+  dp[i][j] = max(dp[i-1][j], dp[i-1][j - w[i]] + v[i])
+  // 0/1 Knapsack: max(exclude item i, include item i)
+  ```
+
+D. Division
+* Meaning: Expected value or modular inverse calculations.
+* When to use: Averaging outcomes (probability DP) or dividing out identical permutations (combinatorics).
+
+> [!tip] Golden Rule of DP Transitions
+> You can combine any states (`dp[i][j]`, `dp[k][m]` and so on) as long as:
+> 1. There are no cycles (the underlying state graph is a **DAG**).
+> 2. You satisfy subproblem independence.
+
+- **`vector<int> arr(5):`** Creates 1 vector holding 5 plain integers (1D).
+- **`vector<int> arr[5]:`** Creates a fixed-size C-array of 5 vectors stored on the stack (2D).
+- **`vector<vector<int>> arr(5):`** Creates 1 dynamic vector holding 5 vectors stored on the heap (2D).
+
+
+_Memoization_ is a computer optimization technique that stores the results of expensive function calls; The property where many different paths collapse into one reusable state is called _overlapping subproblems_ and it's the entire reason DP is faster than brute force. 
+
+
+> [!tip] How to recognize and solve DP problems?
+> intuition, start off by assuming every problem is DP
+> 
+> start by thinking how you would solve it recursively, like a brute force or backtracking
+> Recursive + Memoization will work for most DP problems
+> 
+> break the problem into bits and solve one bit at a time; the recursive function can usually directly tell you the DP state and transitions
+> 
+> if recursion doesn't work, try to pull the state / transitions right out of the statement
+> if neither of these tricks work, it's probably not an easy problem
