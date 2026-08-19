@@ -1,5 +1,5 @@
 
-#### cf template
+#### template
 
 ```
 // @author: Tejaansh
@@ -108,6 +108,17 @@ int main() {
 }
 ```
 
+int lb_idx = lower_bound(arr.begin(), arr.end(), n) - arr.begin();
+int ub_idx = upper_bound(arr.begin(), arr.end(), n) - arr.begin();
+
+`to_string(n)` = convert `int` to `string`
+`stoi(s)` = convert `string` to `int`
+
+memset fills a contiguous block of memory with a specific byte value
+`void* memset(void* ptr, int value, size_t num);`
+
+• Substrings / Subarrays (Contiguous): `O(n²)`
+• Subsequences (Non-contiguous, Order kept): `O(2ⁿ)`
 ### Dynamic Programming:
 
 Dynamic Programming is mostly just recursion with a few optimizations. 
@@ -193,3 +204,4 @@ _Memoization_ is a computer optimization technique that stores the results of ex
 > 
 > if recursion doesn't work, try to pull the state / transitions right out of the statement
 > if neither of these tricks work, it's probably not an easy problem
+

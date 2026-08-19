@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a6b0747fe565c7ed",
+        "id": "7e2d5ac2cf1ce838",
         "type": "tabs",
         "children": [
           {
-            "id": "c5fc1153026b3df6",
+            "id": "bf993366b9db5c9e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "backend.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "backend"
+              "title": "New tab"
             }
           }
         ]
@@ -96,14 +92,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "backend.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
               "title": "Backlinks"
@@ -171,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,28 +180,28 @@
       "bases:Create new base": false
     }
   },
-  "active": "c5fc1153026b3df6",
+  "active": "bf993366b9db5c9e",
   "lastOpenFiles": [
-    "machine-learning-math.md",
     "backend.md",
-    "Pasted image 20260804111832.png",
-    "competitive-programming-solve.md",
-    "competitive-programming-learn.md",
+    "Pasted image 20260815122755.png",
+    "distribution.md",
+    "images/7.png",
+    "Pasted image 20260815114638.png",
+    "Pasted image 20260815114636.png",
+    "designing data-intensive applications.md",
     "deep learning.md",
+    "competitive-programming.md",
+    "open-source.md",
+    "machine-learning.md",
+    "competitive-programming-learn.md",
+    "machine-learning-math.md",
+    "Pasted image 20260804111832.png",
     "images/6.png",
     "images/5.png",
-    "distribution.md",
     "images/4.png",
     "images/3.png",
     "images/3.png",
-    "Pasted image 20260728091117.png",
-    "images/2.png",
-    "open-source.md",
-    "machine-learning.md",
-    "images/1.png",
-    "images/2.png",
     "rag.md",
-    "designing data-intensive applications.md",
     "backend",
     "images",
     "untitled folder",
