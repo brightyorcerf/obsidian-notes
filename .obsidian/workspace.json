@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "7e2d5ac2cf1ce838",
+        "id": "2d04655dd80dc719",
         "type": "tabs",
         "children": [
           {
-            "id": "bf993366b9db5c9e",
+            "id": "0016208625937f3d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "image",
+              "state": {
+                "file": "images/7.png"
+              },
+              "icon": "lucide-image",
+              "title": "7"
             }
           }
         ]
@@ -76,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 201.5
+    "width": 200
   },
   "right": {
     "id": "eba10eb9c8b86f6b",
@@ -92,16 +94,17 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "competitive-programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for competitive-programming"
             }
           },
           {
@@ -166,7 +169,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,31 +184,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "bf993366b9db5c9e",
+  "active": "6d575e25023ff901",
   "lastOpenFiles": [
-    "backend.md",
-    "Pasted image 20260815122755.png",
-    "distribution.md",
     "images/7.png",
-    "Pasted image 20260815114638.png",
-    "Pasted image 20260815114636.png",
-    "designing data-intensive applications.md",
-    "deep learning.md",
-    "competitive-programming.md",
-    "open-source.md",
-    "machine-learning.md",
-    "competitive-programming-learn.md",
-    "machine-learning-math.md",
-    "Pasted image 20260804111832.png",
     "images/6.png",
+    "Pasted image 20260815114638.png",
+    "images/7.png",
+    "Pasted image 20260815114636.png",
+    "competitive-programming.md",
     "images/5.png",
     "images/4.png",
     "images/3.png",
-    "images/3.png",
+    "images/2.png",
+    "distribution.md",
+    "deep learning.md",
+    "competitive-programming-solve.md",
     "rag.md",
-    "backend",
+    "machine-learning-math.md",
+    "competitive-programming-learn.md",
+    "interview/Presonance.md",
+    "images/Screenshot 2026-07-19 at 2.13.44 PM.png",
+    "Untitled.md",
+    "Untitled 1.md",
+    "README.md",
+    "interview",
+    "backend.md",
+    "designing data-intensive applications.md",
+    "open-source.md",
+    "interview",
+    "machine-learning.md",
     "images",
-    "untitled folder",
-    "README.md"
+    "untitled folder"
   ]
 }

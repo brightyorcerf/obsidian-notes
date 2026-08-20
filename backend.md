@@ -223,7 +223,7 @@ API Request Flow:
 Client → Route Matching → Validation & Transformation 
 → Controller → Service → Repository → Database
 
-![[Pasted image 20260815122755.png]]
+![[7.png]]
 
 - Controller Layer = handles incoming http requests, validates inputs, delegates business logic to service layer before returning an appropriate response
 - Service Layer = encapsulates core business rules, workflows, and logic independent of the web interface or database implementation
