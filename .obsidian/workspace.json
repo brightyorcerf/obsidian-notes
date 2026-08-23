@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2d04655dd80dc719",
+        "id": "14a93de3610e4e29",
         "type": "tabs",
         "children": [
           {
-            "id": "0016208625937f3d",
+            "id": "546a09a1c17db8d8",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "images/7.png"
+                "file": "machine-learning-math.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "7"
+              "icon": "lucide-file",
+              "title": "machine-learning-math"
             }
           }
         ]
@@ -184,35 +186,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "6d575e25023ff901",
+  "active": "546a09a1c17db8d8",
   "lastOpenFiles": [
-    "images/7.png",
-    "images/6.png",
-    "Pasted image 20260815114638.png",
-    "images/7.png",
-    "Pasted image 20260815114636.png",
+    "open-source.md",
     "competitive-programming.md",
+    "Screenshot 2026-08-20 at 11.37.13 AM.png",
+    "deep learning.md",
+    "designing data-intensive applications.md",
+    "machine-learning.md",
+    "distribution.md",
+    "images/8.png",
+    "images/9.png",
+    "images/7.png",
+    "Pasted image 20260815114638.png",
+    "images/6.png",
+    "Pasted image 20260815114636.png",
     "images/5.png",
     "images/4.png",
-    "images/3.png",
-    "images/2.png",
-    "distribution.md",
-    "deep learning.md",
     "competitive-programming-solve.md",
     "rag.md",
     "machine-learning-math.md",
     "competitive-programming-learn.md",
     "interview/Presonance.md",
-    "images/Screenshot 2026-07-19 at 2.13.44 PM.png",
     "Untitled.md",
     "Untitled 1.md",
     "README.md",
     "interview",
     "backend.md",
-    "designing data-intensive applications.md",
-    "open-source.md",
     "interview",
-    "machine-learning.md",
     "images",
     "untitled folder"
   ]

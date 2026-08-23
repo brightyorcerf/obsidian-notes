@@ -119,11 +119,35 @@ memset fills a contiguous block of memory with a specific byte value
 
 • Substrings / Subarrays (Contiguous): `O(n²)`
 • Subsequences (Non-contiguous, Order kept): `O(2ⁿ)`
+
+- **`vector<int> arr(5):`** Creates 1 vector holding 5 plain integers (1D).
+- **`vector<int> arr[5]:`** Creates a fixed-size C-array of 5 vectors stored on the stack (2D).
+- **`vector<vector<int>> arr(5):`** Creates 1 dynamic vector holding 5 vectors stored on the heap (2D).
+
+---
 ### Dynamic Programming:
 
-Dynamic Programming is mostly just recursion with a few optimizations. 
-- don't do the same thing multiple times
-- discard useless info
+Dynamic Programming is mostly just recursion with a few optimisations. 
+- don't do the same thing multiple times + discard useless info
+- breaking problems into smaller subproblems + identifying overlapping subproblems
+- how to get answer for bigger problem from smaller subproblems
+- what is the smallest subproblem which is trivial to solve (base case)
+
+![[8.png]]
+
+
+_Memoization_ is a computer optimization technique that stores the results of expensive function calls; The property where many different paths collapse into one reusable state is called _overlapping subproblems_ and it's the entire reason DP is faster than brute force. 
+
+Important points to note
+- how do you store the memoization (array, 2d array, hash map..)
+- how will you check if subproblem has been solved before (initialise with -1 say)
+- how to update / retrieve the value 
+  
+![[9.png]]
+
+1) Recursive DP (top-down / memoization): start at final answer and break it down into smaller subproblems, if subproblem isn't solved yet, it calculates and saves it;  highly intuitive to write but can overflow stack; slow / flow is not important (less thinking)
+2) Iterative DP (bottom-up / tabulation): starts with base case and uses loop to iteratively fill a table until it reaches the final target; no call stack overhead, forces you to compute every single subproblem in the table, harder to figure correct loop order for complex problems; faster / flow is important (more thinking)
+
 
 Algebraically, `dp[i][j]` is simply a mathematical function $f(i, j)$ that returns a single numerical value (such as a count, minimum cost, or maximum profit) based on state variables $i$ and $j$.
 
@@ -133,16 +157,14 @@ Think of `dp[i][j]` as a **lookup table** for a subproblem:
 - Transitions: represent the way the states interact with each other
 - Base Case: similar to recursion
 
-Push VS Pull dynamic programming: 
-
-Pull DP: pull answers from prev DP values (our recursive solution)
+1) Pull DP: pull answers from prev DP values (our recursive solution)
 Recursive DP can only be Pull DP; for iterative Pull DP the answers we pull need to be complete and the order of iteration always matters
 ```
 for each state x:
 	for each state y that can effect x
 	    do some transition with dp[y] to dp[x]
 ```
-Push DP: push answers to future DP values (our iterative solution)
+2) Push DP: push answers to future DP values (our iterative solution)
 ```
 for each state y
 	for each state x that it effects
@@ -186,22 +208,18 @@ D. Division
 > 1. There are no cycles (the underlying state graph is a **DAG**).
 > 2. You satisfy subproblem independence.
 
-- **`vector<int> arr(5):`** Creates 1 vector holding 5 plain integers (1D).
-- **`vector<int> arr[5]:`** Creates a fixed-size C-array of 5 vectors stored on the stack (2D).
-- **`vector<vector<int>> arr(5):`** Creates 1 dynamic vector holding 5 vectors stored on the heap (2D).
-
-
-_Memoization_ is a computer optimization technique that stores the results of expensive function calls; The property where many different paths collapse into one reusable state is called _overlapping subproblems_ and it's the entire reason DP is faster than brute force. 
 
 
 > [!tip] How to recognize and solve DP problems?
 > intuition, start off by assuming every problem is DP
 > 
-> start by thinking how you would solve it recursively, like a brute force or backtracking
-> Recursive + Memoization will work for most DP problems
+> think about subproblem (state)
+> defining DP state is very important
 > 
-> break the problem into bits and solve one bit at a time; the recursive function can usually directly tell you the DP state and transitions
+> think about breaking into smaller subproblems
 > 
-> if recursion doesn't work, try to pull the state / transitions right out of the statement
-> if neither of these tricks work, it's probably not an easy problem
+> think about relation b/w smaller subproblems to computer bigger subproblem (transition)
+> 
+
+
 
