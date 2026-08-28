@@ -108,23 +108,8 @@ int main() {
 }
 ```
 
-int lb_idx = lower_bound(arr.begin(), arr.end(), n) - arr.begin();
-int ub_idx = upper_bound(arr.begin(), arr.end(), n) - arr.begin();
-
-`to_string(n)` = convert `int` to `string`
-`stoi(s)` = convert `string` to `int`
-
-memset fills a contiguous block of memory with a specific byte value
-`void* memset(void* ptr, int value, size_t num);`
-
-• Substrings / Subarrays (Contiguous): `O(n²)`
-• Subsequences (Non-contiguous, Order kept): `O(2ⁿ)`
-
-- **`vector<int> arr(5):`** Creates 1 vector holding 5 plain integers (1D).
-- **`vector<int> arr[5]:`** Creates a fixed-size C-array of 5 vectors stored on the stack (2D).
-- **`vector<vector<int>> arr(5):`** Creates 1 dynamic vector holding 5 vectors stored on the heap (2D).
-
 ---
+
 ### Dynamic Programming:
 
 Dynamic Programming is mostly just recursion with a few optimisations. 
@@ -148,6 +133,11 @@ Important points to note
 1) Recursive DP (top-down / memoization): start at final answer and break it down into smaller subproblems, if subproblem isn't solved yet, it calculates and saves it;  highly intuitive to write but can overflow stack; slow / flow is not important (less thinking)
 2) Iterative DP (bottom-up / tabulation): starts with base case and uses loop to iteratively fill a table until it reaches the final target; no call stack overhead, forces you to compute every single subproblem in the table, harder to figure correct loop order for complex problems; faster / flow is important (more thinking)
 
+| Pattern          | Prefer Iterative                                                                | Prefer Recursive                                                                   |
+| ---------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **State Space**  | You need to compute **all** subproblems (ex: every value $0$-$N$).              | You only need a **small fraction** of the state space (many states are unvisited). |
+| Recursion Depth  | Depth $> 10^5$ (risks Stack Overflow).                                          | Depth $\le 10^4$ or non-linear tree structures.                                    |
+| **Dependencies** | Simple, clear ordering (e.g., $dp[i]$ depends strictly on $dp[i-1 \dots i-6]$). | Complex state transitions (e.g., DAGs, tree nodes, grid paths with obstacles).     |
 
 Algebraically, `dp[i][j]` is simply a mathematical function $f(i, j)$ that returns a single numerical value (such as a count, minimum cost, or maximum profit) based on state variables $i$ and $j$.
 

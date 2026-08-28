@@ -1,4 +1,6 @@
-	why backend? data
+## backend from first principles
+
+why backend? data
 
 #### Backend API Flow
 
@@ -231,11 +233,84 @@ Client → Route Matching → Validation & Transformation
 
 Validation: Checks whether incoming data is valid and allowed. Examples:
 - required fields exist, data types
+some types of validation: syntactic, semantic, type
+for all APIs we need both frontend (user experience) and server-side (security + data integrity) validation
 
 Transformation: Converts valid input into the form the application expects. Goal is to normalize data at the system boundary before it reaches business logic. Examples:
 - "42" → 42,  trim whitespace, map request data to an internal object
 
 ---
+#### Handlers, services and repositories + middleware + request context
+
+A request lifecycle tracks the journey of an action from a client device to a server and back. It covers network lookup, server processing, and client rendering
+
+1. Handler / Controller Layer
+ Acts as the entry and exit gatekeeper for HTTP interactions.
+* Injected Context: In most backend runtimes (Node.js, Go, Python), the handler receives 2 primary objects:
+* `Request`: To extract incoming payload, query parameters, headers, and route parameters
+* `Response`: To construct headers, status codes, and HTTP body payloads.
+Core Tasks:
+- Binding / Deserialization: Converts wire formats (`JSON`) into the runtime’s native language format (`struct` in Go, `dict` in Python, object in JS). If deserialization fails, short-circuit immediately with **`400 Bad Request`**.
+- Validation + Transformation
+- Delegation: Forwards pure native parameters to the Service Layer.
+- Response Formatting: Evaluates execution results + attaches HTTP Status Codes
+
+2. Service Layer
+Executes core application business logic. Must remain entirely decoupled from HTTP concepts.
+Core Tasks:
+- Business Logic Execution:
+- Orchestration: Coordinates multiple calls across distinct repository methods and merges disparate data structures.
+- Side-Effects: Handles external integrations like calling third-party microservices.
+- Output: Returns pure domain data models or domain errors back to the Handler.
+ 
+ 3. Repository Layer
+Directly interacts with data storage and persistence mechanisms.
+* Single Responsibility Principle: A single repository function should perform one atomic database operation. Avoid overloaded functions with conditional logic to handle multiple formats (ex: separate `getAllBooks()` from `getBookById(id)`).
+Core Tasks:
+- Query Construction: Receives explicit parameter arguments from the Service layer and translates them into ORM, SQL, or NoSQL queries.
+- Data Fetching & Persistence: Executes database CRUD operations.
+- Data Return: Returns raw persistence records back to the Service layer
+
+
+What is a Middleware?
+intermediary software layer between frontend and core backend logic which acts as a translator to process, route, and manage requests.
+
+Common Middleware Use Cases
+
+| Middleware Type                | Primary Purpose                                                                                                         | Short-Circuit Condition                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| CORS                           | Checks incoming `Origin` headers against allowed domains and injects appropriate `Access-Control-Allow-Origin` headers. | Rejects request or omits headers if the client origin is disallowed.        |
+| Security Headers               | Injects standard protective headers (e.g., `HSTS`, `X-Content-Type-Options`, `CSP`) into the response.                  | Does not short-circuit; mutates headers and calls `next()`.                 |
+| Authentication & Authorization | Decodes tokens (JWT), checks session store, verifies user identity, and attaches `user_id` to the `Request` object.     | Returns `401 Unauthorized` or `403 Forbidden` if identity/permissions fail. |
+| Rate Limiting                  | Tracks client IP/API key hits within a time window to prevent API abuse.                                                | Returns `429 Too Many Requests` when quota is exceeded.                     |
+| Body Parsing / Deserialization | Reads raw incoming stream buffers and converts them into JSON objects attached to `req.body`.                           | Returns `400 Bad Request` if the stream payload is malformed JSON.          |
+
+
+```
+Kernel: socket → TCP handshake → epoll/kqueue wakes runtime
+   │
+Runtime: reads raw bytes off the fd, parses HTTP framing
+   │
+Middleware pipeline (with per-request context: NOT a shared global)
+   │
+Handler: deserializes body, validates, delegates native params
+   │
+Service: business logic; if multi-step DB writes, owns a single
+   checked-out connection/transaction for the whole operation
+   │
+Repository: executes queries using pool-provided connections;
+   each call one atomic operation, sharing the Service's
+   transaction handle when one is active
+   │
+Database: connection pool bounds total concurrent connections
+   │
+Response streamed back; connection released to pool
+```
+
+
+---
+## extra
+
 #### RPCs vs edge functions
 
 When building an app using a backend-as-a-service like Supabase, need to choose between RPCs (remote procedure calls) and Edge Functions to handle your backend logic.
